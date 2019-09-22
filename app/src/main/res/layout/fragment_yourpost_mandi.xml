@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Livemandi.LiveMandi"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/progresslay"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/data"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Data Found"/>
+        <ListView
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:visibility="gone"
+            android:id="@+id/yourPostlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addpost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="160dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        app:fabCustomSize="50dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_add_white_24dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:visibility="invisible"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        app:fabCustomSize="50dp"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/refresh" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:elevation="6dp"
+        app:backgroundTint="@color/colorAccent"
+        app:pressedTranslationZ="12dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/menu" />
+
+    <!--
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:elevation="6dp"
+        android:gravity="center"
+        app:fabSize="auto"
+        app:fabCustomSize="60dp"
+        android:src="@drawable/menu"
+        app:pressedTranslationZ="12dp"
+        android:layout_margin="16dp"
+        app:layout_anchorGravity="center" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/reload"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="86dp"
+        app:srcCompat="@drawable/refresh"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        app:fabCustomSize="45dp"
+        app:layout_anchorGravity="center"
+        app:pressedTranslationZ="12dp" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addpost"
+
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:elevation="6dp"
+        app:fabSize="auto"
+        app:fabCustomSize="45dp"
+        android:src="@drawable/ic_add_white_18dp"
+        app:pressedTranslationZ="12dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="16dp"
+        app:layout_anchorGravity="center" />
+    -->
+    <TextView
+        android:id="@+id/refreshtext"
+        android:text="Refresh"
+        android:textSize="16dp"
+        android:textColor="#000"
+
+        android:visibility="invisible"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="107dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/addposttext"
+        android:text="Add New Post"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:gravity="right|end"
+        android:visibility="invisible"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="54dp"
+        android:layout_marginBottom="177dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</android.support.design.widget.CoordinatorLayout>

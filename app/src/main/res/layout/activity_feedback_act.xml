@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Feedback_act">
+
+    <TextView
+        android:id="@+id/feedname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Your Feedback here"
+        android:textColor="#085005"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="Name"
+        android:id="@+id/nametag"
+        android:layout_height="wrap_content">
+    <EditText
+        android:singleLine="true"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textStyle="normal" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:hint="Your message here"
+        android:id="@+id/msgtag"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:breakStrategy="balanced"
+        android:fitsSystemWindows="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="20dp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:background="@drawable/btn_layout"
+        android:onClick="submit"
+        android:textColor="#fff"
+        android:id="@+id/submitFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Submit"
+        android:textSize="18dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.agri.enquete">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/capture"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/capture"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".CurrentPriceHandler" />
+        <activity android:name=".Livemandi.ViewPost" />
+        <activity
+            android:name=".Livemandi.EditPost"
+            android:label="Edit Your Post" />
+        <activity
+            android:name=".teaf.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+
+        <activity
+            android:name=".EditProfile"
+            android:label="Edit Profile" />
+        <activity
+            android:name=".Livemandi.addyourPost"
+            android:label="Add your Post" />
+        <activity
+            android:name=".Livemandi.ShowMandi"
+            android:excludeFromRecents="true" />
+        <activity android:name=".Livemandi.LiveMandi" />
+        <activity
+            android:name=".CurrentPrice"
+            android:noHistory="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="key" />
+
+        <activity
+            android:name=".HomePage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rate_act"
+            android:label="Rate Us" />
+        <activity
+            android:name=".Setting_act"
+            android:label="Settings" />
+        <activity
+            android:name=".Feedback_act"
+            android:label="Feedback" />
+        <activity
+            android:name=".FarmerHome"
+            android:label="Details" />
+        <activity
+            android:name=".ProfilePicture"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:label="My Profile"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Contact_us"
+            android:label="Contact us" />
+        <activity
+            android:name=".FarmerLogin"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".cropInfo"
+            android:label="Crop Information" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Organic_Farming"
+            android:label="Organic Farming" />
+        <activity
+            android:name=".AgriVideos"
+            android:label="Agriculture Videos" />
+        <activity android:name=".WeatherForcast" />
+        <activity android:name=".Forum" />
+        <activity
+            android:name=".CropList"
+            android:label="Crops List" />
+        <activity
+            android:name=".VerifyOtp"
+            android:label="Verify OTP" />
+        <activity
+            android:name=".main.MainVedio"
+            android:label="Agriculture Videos"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".main.YoutubePlayerActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Weather.WeatherActivity" />
+        <activity android:name=".OrganicInfo" />
+    </application>
+
+</manifest>

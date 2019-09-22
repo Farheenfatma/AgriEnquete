@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_number": "889743467862",
+    "firebase_url": "https://agrienquete.firebaseio.com",
+    "project_id": "agrienquete",
+    "storage_bucket": "agrienquete.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889743467862:android:b23539d6cf3653f1",
+        "android_client_info": {
+          "package_name": "com.agri.enquete"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889743467862-8tburrlamtmhrg20dbl8fv7qcbuphbok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agri.enquete",
+            "certificate_hash": "cce1fb6ae38f1d4e96c6839a4d57743f23d4ed8a"
+          }
+        },
+        {
+          "client_id": "889743467862-8e4sbjvs35h7fv99hjh1omveus2aqa58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agri.enquete",
+            "certificate_hash": "c7a2ba5eab781f610125d8ab1f6d6a22a98e9672"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiWFJX9CrhMBMHyeZoxlnezgJWNNU5a24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889743467862-tprjie77q87rsh7g3a3i7eafoo0vhigb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
